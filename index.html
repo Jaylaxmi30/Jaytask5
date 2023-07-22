@@ -1,0 +1,375 @@
+﻿<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dora world</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /*
+        .column1 {
+            width: 500px;
+            margin: 20px;
+            margin-right: 100px;
+            float: left;
+        }
+        .column2 {
+            width: 500px;
+            margin: 20px;
+            float: left;
+            padding-left: 40px;
+            padding-right: 10px;
+            padding-bottom: 90px;
+        }
+        .column3 {
+            width: 500px;
+            margin: 20px;
+            margin-right: 90px;
+            float: right;
+        }*/
+        .scroll-container {
+            background-color: white;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+
+
+        .scroll-container img {
+            padding: 20px;
+            margin-right:20px;
+            width:400px;
+            height:350px;
+            border:3px solid black;
+            border-radius:4px;
+            box-shadow:4px 4px 4px black;
+        }
+
+
+        .container1 {
+            position: relative;
+        }
+
+        .image {
+            opacity: 1;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container1:hover .image {
+            opacity: 0.3;
+        }
+
+        .container1:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #C0C0C0;
+            color: black;
+            font-size: 16px;
+            padding: 16px 32px;
+            border-radius:20%;
+        }
+
+    </style>
+</head>
+<body style="z-index:-1; position:relative;">
+    <div class="container-fluid" style="z-index:-1;">
+        <div class="row">
+            <div class="col-xxl-9 col-md-9 col-9">
+                <h1 class="display-6">
+                    <strong>
+                        Doraemon
+                    </strong>
+                </h1>
+                <p>
+                    <strong> Doraemon (ドラえもん) is a Japanese manga series written and illustrated by Fujiko F. Fujio.</strong> The manga was first serialized in December 1969,with its 1,345 individual chapters
+                    compiled into 45 tankōbon volumes and published by Shogakukan from 1970 to 1996. The story revolves around an <mark>earless robotic cat</mark> named Doraemon, who travels back
+                    in time from the 22nd century to aid a boy named <span class="text-danger ">Nobita Nobi.</span>
+                </p>
+                <br><br>
+
+
+                <h1 class="display-6 text-secondary" style="z-index:-1;">
+                    <strong>
+                        Creation and conception
+                    </strong>
+
+                </h1>
+                <p style="z-index:-1;">
+                    <strong>Doraemon is mainly aimed at children,</strong> so Fujio chose to create the character with a simple graphic style,
+                    based on shapes such as <mark>circles and ellipses.</mark> He used the same sequences of cartoons with regularity and continuity to enhance the reader's ease of understanding.
+                </p>
+            </div>
+
+            <div class="col-xxl-3 col-md-3 col-3 container1">
+                <img src="img/D1.png" alt="Dora" width="400px" height="350px" style="margin-top:10px; border:2px solid black; border-radius:50%;" class="image">
+                <div class="middle">
+                    <div class="text">Doraemon</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-12">
+                <h1>Gadgets</h1>
+                <p style="background-color: #AFDCEC; margin-top:10px; padding: 10px; display: inline-block; border: 4px solid #95B9C7 "><strong>Doraemon's tools</strong></p>
+                <p style="margin-top: -10px;">
+                    The most important gadgets include "Take-Copter", a small piece of headgear made out of bamboo that can allow its users to fly; "Time Machine",
+                    a machine used for time travel; "Anywhere Door", a pink-colored door that allows people to travel according to the thoughts of the person who turns the knob; "Time Kerchief",
+                    a handkerchief which can turn an object new or old or a person young or old.
+                </p>
+                <h3 style="display:inline-block; margin-right:5px;">Likes</h3><span class="bg-secondary btn text-light" style="font-size:20px; ">10</span>
+            </div>
+            <div class="col-xl-4 col-md-6 col-12" style="background-color: #5CB3FF; text-align: justify; ">
+                <h1>Origin of the name</h1>
+                <p>The name "Doraemon" can be roughly translated to "stray". Unusually, the name "Doraemon" (ドラえもん) is written in a mixture of two Japanese scripts: Katakana (ドラ) and Hiragana (えもん). </p>
+            </div>
+            <div class="col-xl-4 col-md-6 col-12">
+                <h1 style="color: #2554C7 ">Dorayaki</h1>
+                <p style="color: #659EC7; font-size: 20px; ">
+                    <strong>
+                        Doraemon loves dorayaki and so it is depicted as his favourite food (in the English dub, Nobita (Noby) calls it "yummy buns" as an alternative),
+                        and it has been a plot device several times throughout the series.
+                    </strong>
+                </p>
+                <img src="img/dorayaki.jpg" alt="dorayaki" width="150px" height="150px" style="float: right; border: 3px solid #78866B; ">
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h1 style="margin:10px; text-shadow:2px 2px black;">Doraemon And Friends</h1>
+    <div class="scroll-container container-fluid">
+        <img src="img/ND3.jpg" alt="Mountains">
+        <img src="img/df2.jpg" alt="Mountains">
+        <img src="img/D.jpg" alt="Mountains">
+        <img src="img/df3.jpg" alt="Mountains">
+        <img src="img/dora_f.jpg" alt="Cinque Terre">
+        <img src="img/Df.jpg" alt="Forest">
+        <img src="img/df1.jpg" alt="Northern Lights">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-8 col-md-8 col-12">
+                <h1>
+                    Movies List
+                </h1>
+                <p>
+                    Doraemon grossed more than 100 billion yen in revenue and sold more than 100 million tickets. Below are some of the Doraemon Movies list:
+                </p>
+                <ol>
+                    <li>
+                        “Doraemon: Nobita’s Dinosaur“
+                    </li>
+                    <li>
+                        “Doraemon: The Records of Nobita, Spaceblazer“
+                    </li>
+                    <li>
+                        “Doraemon: Nobita and the Haunts of Evil“
+                    </li>
+                    <li>
+                        “Doraemon: Nobita and the Castle of the Undersea Devil“
+                    </li>
+                    <li>
+                        “Doraemon: Nobita’s Great Adventure into the Underworld”
+                    </li>
+                </ol>
+
+                <p class="display-5"><strong>About Doraemon Movies In India</strong></p>
+                <p>
+                    Since 2010, there have been a total of twenty-eight Doraemon movies that have been released in India; two of which received theatrical premieres,
+                    while the rest were television premieres on Disney Channel India or Hungama TV. The first movie to be released in theaters was Nobita And The Steel Troops-The New Age,
+                    which was a huge hit in Indian theaters. The second film was Nobita Aur Jadooi Tapu. The list of Doraemon movies that have been released in India is as follows in the table below.
+                </p>
+
+            </div>
+            <div class="col-xl-4 col-md-4 col-12">
+                <h1><u>Indian Movie List</u></h1>
+
+                <img src="img/dora_M.jpg" alt="movies" width="350px" height="400px" style="margin-left:100px; box-shadow:4px 4px 4px black;">
+            </div>
+        </div>
+    </div><hr>
+
+    <div class="container">
+        <h2>Nobita & Doraemon</h2>
+        <p>
+            “Nobita’s Earth Symphony”: Doraemon’s 43rd Film Set for  <span class="bg-dark text-light" style="border-radius:40%; padding:5px;">2024 Release</span>
+        </p>
+        <p>Nobita and Doraemon can be called the <span class="text-danger">closest friends</span> of all time. </p>
+        <p>They both have a <span class="text-danger">strong bond</span> and will never leave each other's side.</p><br />
+        <hr>
+    </div>
+
+    <div class="container p-5">
+        <h1>
+            Top doraemon movies
+        </h1>
+        <table class="table table-bordered border-dark table-responsive">
+            <tr>
+                Top doraemon movies
+            </tr>
+            <tr class="bg-secondary">
+                <th>Rank</th>
+                <th>Title</th>
+                <th>Original release date</th>
+                <th>Japanese Name</th>
+                <th>Transcription</th>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid white;">1st</td>
+                <td>Doraemon: Nobita's Dinosaur</td>
+                <td class="table-warning">15 March 1980</td>
+                <td>(ドラえもんのび太の恐竜)</td>
+                <td>"Doraemon: Nobita no Shin Makai Daibōken ~7-nin no Mahō Tsukai~"</td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid white;"></td>
+                <td>Doraemon: The Records of Nobita, Spaceblazer</td>
+                <td class="table-warning">14 March 1981</td>
+                <td>(ドラえもんのび太の宇宙開拓史)</td>
+                <td>"Eiga Doraemon Nobita to Midori no Kyojinden" </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="table-danger">Doraemon: Nobita and the Haunts of Evil</td>
+                <td class="table-danger">13 March 1982</td>
+                <td class="table-danger">(ドラえもんのび太の大魔境)300MB</td>
+                <td class="table-danger">"Eiga Doraemon Shin Nobita No Uchu Kaitakushi"</td>
+            </tr>
+            <tr>
+                <td class="table-success" style="border-bottom: 1px solid #AAF0D1;">2nd</td>
+                <td>Doraemon: Nobita and the Castle of the Undersea Devil</td>
+                <td class="table-warning">12 March 1983</td>
+                <td>(映画ドラえもん のび太の恐竜2006)</td>
+                <td>"Doraemon Nobita no Ningyo Daikaisen"</td>
+            </tr>
+            <tr>
+                <td class="table-success"></td>
+                <td>Doraemon: Nobita's Little Star Wars</td>
+                <td class="table-warning">17 March 1984</td>
+                <td>(映画ドラえもん のび太の新魔界大冒険 〜7人の魔法使い〜)</td>
+                <td>"Eiga Doraemon Shin Nobita to Tetsujin Heidan ~Habatake Tenshi Tachi~"</td>
+            </tr>
+
+        </table>
+        <hr>
+    </div>
+    <div class="container">
+        <h1 class="display-3"><strong>Contaier Style</strong></h1>
+        <div class="container">
+            <div class="row">
+                <div class=" col-xxl-6 col-md-6 col-6">
+                    <ul style="list-style-type:none;" class="list-group ">
+                        <li class="list-group-item text-warning">Doraemon History<span class="badge bg-secondary m-1">😺 10</span></li>
+                        <li class="list-group-item text-warning">Nobita</li>
+                        <li class="list-group-item text-warning">Friends</li>
+                        <li class="list-group-item text-warning">Creation</li>
+                        <li class="list-group-item text-warning">
+                            Anime <p class="text-dark">
+                                The anime has also been aired in over sixty countries worldwide.
+                                It premiered in Thailand in 1982, the Philippines in 1999, India in 2005, and Vietnam in 2010. Other Asian countries that broadcast the series include China,
+                                Hong Kong, Singapore, Taiwan, Malaysia, Indonesia, and South Korea. The series is licensed in EMEA regions by LUK International;
+                                it premiered in Spain in 1993 and France in 2003. It has also been distributed in South American countries, including Brazil, Colombia, and Chile.
+                                In 2017, POPS Worldwide, a Vietnamese multimedia company, collaborated with TV Asahi to release the anime series on YouTube and other digital platforms.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-xxl-6 col-md-6 col-6">
+                    <h2 class="bg-info p-3">Description</h2>
+                    <p>
+                        The series stopped publishing after Fujimoto's death in 1996,
+                        without an ending; this has aroused numerous urban legends throughout the years.[26] One of the most well-known "endings" of the
+                        manga was by an amateur manga cartoonist under the pen name "Yasue T. Tajima", first appeared on the Internet in 1998 and made up into a manga in 2005.
+                    </p>
+                    <button class="btn btn-secondary border-dark">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <p class="pt-1">
+            Several Doraemon <strong>short films</strong> were produced and released between 1989 and 2004.
+        </p>
+        <hr>
+    </div>
+
+    <div class="container">
+        <p class="display-5"><strong>Image Style</strong></p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-4 col-md-6 col-12 card bg-secondary" " style="margin-left: 100px; width: 300px; padding: 20px;">
+                    <img src="img/dora.jpg" alt="dora" width="300px" height="300px" class="card-img-top img-thumbnail mb-2">
+                    <div>
+                        <p>
+                            Dorayaki is his favourite food. Doraemon is addicted to dorayaki and falls for any trap involving them.
+                        </p>
+                        <button class="btn btn-secondary border-dark" style="background-color: #778899;">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="col-xxl-4 col-md-6 col-12 card bg-secondary" " style="margin-left: 100px; width: 300px; padding: 20px;">
+                    <div>
+                        <p>
+                            Doraemon is very friendly and intelligent, not to mention long-suffering because of Nobita's antics.
+                        </p>
+                        <button class="btn btn-secondary border-dark" style="background-color: #778899;">Learn More</button>
+                        <img src="img/dora1.jpg" alt="dora" class="card-img-top mt-4">
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-md-6 col-12 card bg-secondary" style="margin-left: 100px; margin-bottom: 10px; width: 300px; padding: 20px;">
+                    <img src="img/dora2.jpg" alt="dora" class="card-img-top rounded-circle img-thumbnail mb-5">
+                    <div>
+                        <p>
+                            <strong>Mii-chan is doraemon's crush.</strong> <br>She to Doraemon is similar with Shizuka to Nobita.
+                        </p>
+                        <button class="btn btn-secondary border-dark" style="background-color: #778899; ">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xxl-12 col-md-12 col-12 container">
+        <center>
+            ⠀<pre>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+        ⠀⠀⠀⠀⠀⠀⣀⣤⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⣠⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⢠⣾⡿⠟⠛⠻⢿⣷⡄⠀⠀⠀⣠⣾⣿⣇⠀⠀⠀⡀
+        ⠀⠀⠀⠀⣿⣿⠁⣶⡆⠀⠈⣿⣿⠀⣠⣾⡿⢻⣿⣧⣤⣶⣿⣿
+        ⠀⠀⠀⢀⣿⣿⣆⡀⠀⢀⣰⣿⣿⣾⡿⠋⢀⣾⣿⡿⠟⣿⣿⠏
+        ⠀⢀⣴⡿⠛⠙⣿⣿⣿⣿⣿⣿⡿⠋⠀⢠⣾⡿⢃⣠⣾⡿⠋⠀
+        ⢴⠟⠋⠀⠀⠀⢸⣿⣇⠀⣿⣿⡁⢀⣴⣿⣿⣵⣿⡿⠋⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⢻⣿⣆⠘⠿⣿⣿⣿⣿⠿⠻⣿⣧⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣷⣄⡀⠀⠀⠀⠀⠀⢹⣿⣇⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠿⣿⣷⣶⣤⣤⡄⠀⣿⣿⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⢿⣿⣆⣿⣿⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⠇⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⠏⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀
+
+          </pre>⠀⠀
+        </center>⠀
+    </div>
+
+
+    <br><br><br><br><br><br>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
